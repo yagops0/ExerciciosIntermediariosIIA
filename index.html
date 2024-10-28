@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNIFICADOS CORES</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <p>O que você achou do site <a href="https://www.significados.com.br/cores-2/">https://www.significados.com.br/cores-2/</a>?</p>
+        <form method="post" action="executa.php">
+            <div class="contol-group">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="avaliacoes" id="avaliacoes" value="MuitoBom">Muito Bom <br>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="avaliacoes" id="avaliacoes" value="Bom">Bom <br>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="avaliacoes" id="avaliacoes" value="Regular">Regular<br>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="avaliacoes" id="avaliacoes" value="Ruim">Ruim <br>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="cor">Qual cor você mais gostou?</label>
+                <select name="cor" id="cor" class="custom-select mr-sm-2">
+                    <option value="EscolherCor">Escolher cor</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Amarelo">Amarelo</option>
+                    <option value="Roxo">Roxo</option>
+                    <option value="Rosa">Rosa</option>
+                    <option value="Vermelho">Vermelho</option>
+                    <option value="Laranja">Laranja</option>
+                    <option value="Marrom">Marrom</option>
+                    <option value="Cinza">Cinza</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Preto">Preto</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Digite seus comentários no espaço abaixo:</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+            </div>
+
+            <p>Diga-me como entrar em contato com você:</p>
+
+            <div class="form-group row">
+                <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nomeHelp">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="nome" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="nome" class="col-sm-2 col-form-label">Fone</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fone" name="fone" aria-describedby="foneHelp">
+                </div>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="novidades" name="novidades">
+                <label class="form-check-label" for="novidades"> Quero receber as novidades por email</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn btn-primary">Enviar Dados</button>
+                <button type="submit" class="btn btn-primary">Limpar Formulários</button>
+            </div>
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
